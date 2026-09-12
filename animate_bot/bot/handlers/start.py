@@ -79,7 +79,8 @@ async def select_language(callback: CallbackQuery) -> None:
     # Отправляем главное меню на выбранном языке
     await callback.message.answer(
         get_text(language, "welcome"),
-        reply_markup=main_menu_keyboard(language)
+        reply_markup=main_menu_keyboard(language),
+        parse_mode=ParseMode.HTML
     )
     await callback.answer()
 
@@ -91,6 +92,7 @@ async def back_to_menu(callback: CallbackQuery) -> None:
     
     await callback.message.edit_text(
         get_text(language, "welcome"),
-        reply_markup=main_menu_keyboard(language)
+        reply_markup=main_menu_keyboard(language),
+        parse_mode=ParseMode.HTML
     )
     await callback.answer()
