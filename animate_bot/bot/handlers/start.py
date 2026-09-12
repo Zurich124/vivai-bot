@@ -29,6 +29,7 @@ async def cmd_start(message: Message) -> None:
         "Realize your boldest fantasies in just a few clicks:\n"
         "Create hot videos with your favorite blogger, actress, or even your friend's mom.\n\n"
         "850K+ 10M+ 4.9 <tg-emoji emoji-id="5438496463044475297">⭐</tg-emoji>"
+        parse_mode=ParseMode.HTML
         )
 
     # Отправляем выбор языка
@@ -37,6 +38,7 @@ async def cmd_start(message: Message) -> None:
         "🇬🇧 English\n"
         "🇩🇪 Deutsch",
         reply_markup=language_selection_keyboard()
+        parse_mode=ParseMode.HTML
     )
 
 
