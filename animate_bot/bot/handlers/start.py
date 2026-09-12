@@ -24,16 +24,16 @@ async def cmd_start(message: Message) -> None:
         # Отправляем первое видео
         await message.answer_video(
             FSInputFile(video_path),
-            caption="🎬 *Fulfill Your Desires*\n"
+            caption="5474525960143385880 *Fulfill Your Desires*\n"
         "Fast, Quality, and Confidential with VivaAI\n\n"
         "Realize your boldest fantasies in just a few clicks:\n"
         "Create hot videos with your favorite blogger, actress, or even your friend's mom.\n\n"
-        "850K+ 10M+ 4.9⭐"
+        "850K+ 10M+ 4.9 5438496463044752972"
         )
 
     # Отправляем выбор языка
     await message.answer(
-        "👋 Welcome! / Willkommen!\n\n"
+        "5373159350363764070 Welcome! / Willkommen!\n\n"
         "🇬🇧 English\n"
         "🇩🇪 Deutsch",
         reply_markup=language_selection_keyboard()
@@ -57,15 +57,15 @@ async def select_language(callback: CallbackQuery) -> None:
         # Отправляем второе видео
         await callback.message.answer_video(
             FSInputFile(animation_video_path),
-            caption=("🎬 *Viva AI — Photo & Video Generation*\n\n"
-         "📱 Directly in Telegram\n\n"
+            caption=(f"5255861796350224063 *Viva AI — Photo & Video Generation*\n\n"
+         f"5330237710655306682 Directly in Telegram\n\n"
          "Upload a photo → choose a mode → get result in seconds\n\n"
-         "✨ Around 1,000 modes for photo and video generation\n"
-         "📹 Extend finished videos infinitely\n"
-         "🔗 Combine different modes into chains\n"
-         "⚡ Cinematic-quality video\n"
-         "👻 All results are delivered only to you\n"
-         "🔊 Generate videos with sound")
+         f"5370975411033356097 Around 1,000 modes for photo and video generation\n"
+         f"5334885900356688822 Extend finished videos infinitely\n"
+         f"5271604874419647061 Combine different modes into chains\n"
+         f"5963318814958423599 Cinematic-quality video\n"
+         f"5215338500739573534 All results are delivered only to you\n"
+         f"5388632425314140043 Generate videos with sound")
         )
     
     # Отправляем главное меню на выбранном языке
